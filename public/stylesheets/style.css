@@ -1,13 +1,26 @@
+html {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: rgb(50, 50, 50);
-  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  /*overflow: hidden;*/
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -30,7 +43,7 @@ section {
   left: 10%;
   padding: 0;
   margin: 0;
-  font-family: 'bebas_neuebold';
+  font-family: 'bebas_neuebold', Helvetica, Arial, sans-serif;
   font-size: 55em;
   letter-spacing: -80px;
   color: #fff;
@@ -49,19 +62,70 @@ section {
   display: inline-block;
   margin: 0;
   padding: 0;
-  height: 800px;
+  height: 500px;
   width: 50%;
   /*border: 1px solid red;*/
 }
 
 .section--menu {
   width: 160px;
-  font-family: 'bebas_neuebold';
+  font-family: 'bebas_neuebold', Helvetica, Arial, sans-serif;
   font-size: 2em;
   margin-top: 50%;
   margin-left: -3.8%;
   line-height: 2em;
 }
+/*
+******link animations******
+*/
+#work-link {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+#about-link {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+#contact-link {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -o-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
 /*
 ********* Iris ***********
 */
@@ -143,7 +207,7 @@ section {
   -webkit-animation-duration: .8s;
   -o-animation-duration: .8s;
   animation-duration: .8s;
-  font-family: 'bebas_neuebold';
+  font-family: 'bebas_neuebold', Helvetica, Arial, sans-serif;
   color: #d94f5c;
 }
 
@@ -156,7 +220,7 @@ section {
   -webkit-animation-duration: .8s;
   -o-animation-duration: .8s;
   animation-duration: .8s;
-  font-family: 'bebas_neuebold';
+  font-family: 'bebas_neuebold', Helvetica, Arial, sans-serif;
   color: #d94f5c;
 }
 
@@ -169,10 +233,31 @@ section {
   -webkit-animation-duration: .8s;
   -o-animation-duration: .8s;
   animation-duration: .8s;
-  font-family: 'bebas_neuebold';
+  font-family: 'bebas_neuebold', Helvetica, Arial, sans-serif;
   color: #d94f5c;
 }
 
 .z-12 {
   z-index: 12;
+}
+
+/*
+**** Content Details *****
+*/
+.contact-info {
+  line-height: 1.5;
+  margin-top: .5em;
+  font-size: 3em;
+}
+
+.contact-info a {
+  margin-left: .5em;
+}
+
+.about-details {
+  margin-top: 2em;
+  line-height: 1.3em;
+  font-size: 1.3em;
+  font-family: 'signikasemibold', Helvetica, Arial, sans-serif;
+  color: rgb(255, 255, 255);
 }

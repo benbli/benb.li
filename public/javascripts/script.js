@@ -21,6 +21,22 @@ $(function () {
     });
   }
 
+  function animateOnHover(el, content) {
+
+    $(el).on('mouseover', function (e) {
+      e.preventDefault();
+
+      $(content).addClass('animated rubberBand').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function () {
+        $(this).removeClass('animated rubberBand');
+      });
+    });
+  }
+
+animateOnHover( '.mail-link', '#mail-icon' );
+animateOnHover( '.github-link', '#github-icon' );
+animateOnHover( '.linked-link', '#linked-icon' );
+
 animateOnClick('#work-link', '#work-content');
 animateOnClick('#about-link', '#about-content');
 animateOnClick('#contact-link', '#contact-content');
