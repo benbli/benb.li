@@ -1,8 +1,47 @@
-/*body {
-  font: 125%/1.75 Georgia;
-  color: #444;
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
-h1 {
-  font-size: 150%;
+body {
+  background: #fff;
+  color: #3a3a3a;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+.work-info {
+  text-align: center;
+}
+/*#logo {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+  width: 50%;
+}*/
+
+/* Utility classes
+*********************************************************/
+.centered {
+  margin: 0 auto;
+  /*max-width: 60em;*/
+  width: 90%;
+}
+/* RWD font
+*********************************************************/
+/*:root, html {
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 3vw;
+  }
 }*/

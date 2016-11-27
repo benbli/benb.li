@@ -9,6 +9,12 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
 h1,
 h2,
 h3,
@@ -20,3 +26,18 @@ p {
 img {
   max-width: 100%;
 }
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
