@@ -1,14 +1,13 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font: 100% / 1.6 Lora;
 }
 
 body {
   background: #fff;
   color: #3a3a3a;
   -webkit-font-smoothing: antialiased;
-  font-size: 100%;
-  line-height: 1.6;
 }
 
 a {
@@ -16,32 +15,59 @@ a {
   text-decoration: none;
 }
 
+/* Font
+*********************************************************/
+h1 { font-size: 150%; }
+h2 { font-size: 125%; }
+h3 { font-size: 100%; }
+
+/* Header
+*********************************************************/
+#header {
+  padding: 1rem;
+  border-bottom: .1em solid rgba(0, 0, 0, 0.2);
+  line-height: 1;
+}
+
+#logo {
+  display: block;
+  text-align: center;
+  font-size: 4em;
+  margin: 0 auto;
+  /*width: 50%;*/
+}
+
+/* Showcase section
+*********************************************************/
+.showcase {
+  padding: 1rem;
+}
+.work-recent {
+
+}
 .work-info {
   text-align: center;
 }
-/*#logo {
-  display: block;
-  text-align: center;
-  font-size: 50px;
-  margin: auto;
-  width: 50%;
-}*/
 
 /* Utility classes
 *********************************************************/
-.centered {
-  margin: 0 auto;
-  /*max-width: 60em;*/
-  width: 90%;
-}
-/* RWD font
+
+/* RWD Media queries
 *********************************************************/
-/*:root, html {
-  font-size: 1rem;
+@media (min-width: 35em) {
+  html {
+    font-size: 200%;
+  }
+  body {
+    font-size: 50%;
+  }
 }
 
-@media (min-width: 600px) {
-  :root {
-    font-size: 3vw;
+@media (min-width: 70em) {
+  html {
+    font-size: 300%;
   }
-}*/
+  body {
+    font-size: 40%;
+  }
+}
