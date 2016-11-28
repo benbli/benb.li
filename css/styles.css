@@ -29,13 +29,28 @@ h3 { font-size: 100%; }
   line-height: 1;
 }
 
+#header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #logo {
   display: block;
   text-align: center;
   font-size: 4em;
-  margin: 0 auto;
-  /*width: 50%;*/
 }
+
+#header li {
+  display: inline-flex;
+}
+
+/* Info section
+*********************************************************/
+#info {
+  padding: 1rem;
+}
+
 
 /* Showcase section
 *********************************************************/
