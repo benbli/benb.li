@@ -1,3 +1,5 @@
+/* Common
+*********************************************************/
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -6,20 +8,32 @@ html {
 
 body {
   background: #fff;
-  color: #3a3a3a;
+  // color: #3a3a3a;
+  color: #333;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+
+}
+
 a {
-  color: red;
+  color: #b11;
   text-decoration: none;
 }
 
+
 /* Font
 *********************************************************/
-h1 { font-size: 150%; }
+h1 {
+  color: #13121A;
+  font-size: 150%;
+  font-weight: 700;
+}
 h2 { font-size: 125%; }
 h3 { font-size: 100%; }
+
 
 /* Header
 *********************************************************/
@@ -35,15 +49,19 @@ h3 { font-size: 100%; }
   justify-content: space-between;
 }
 
+#header li {
+  display: inline-flex;
+}
+
+
+/* Logo
+*********************************************************/
 #logo {
   display: block;
   text-align: center;
   font-size: 4em;
 }
 
-#header li {
-  display: inline-flex;
-}
 
 /* Info section
 *********************************************************/
@@ -64,25 +82,27 @@ h3 { font-size: 100%; }
   text-align: center;
 }
 
+
 /* Utility classes
 *********************************************************/
 
+
 /* RWD Media queries
 *********************************************************/
-@media (min-width: 35em) {
-  html {
-    font-size: 200%;
-  }
-  body {
-    font-size: 50%;
-  }
-}
+// @media (min-width: 35em) {
+//   html {
+//     font-size: 200%;
+//   }
+//   body {
+//     font-size: 50%;
+//   }
+// }
 
-@media (min-width: 70em) {
-  html {
-    font-size: 300%;
-  }
-  body {
-    font-size: 40%;
-  }
-}
+// @media (min-width: 70em) {
+//   html {
+//     font-size: 300%;
+//   }
+//   body {
+//     font-size: 40%;
+//   }
+// }
