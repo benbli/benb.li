@@ -3,7 +3,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font: 100% / 1.6 Lora;
+  font: 100% / 1.6 'Source Sans Pro';
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 p {
-
+  font-weight: 400;
 }
 
 a {
@@ -27,12 +27,13 @@ a {
 /* Font
 *********************************************************/
 h1 {
-  color: #13121A;
-  font-size: 150%;
-  font-weight: 700;
+  // color: #13121A;
+  color: #111;
+  font-size: 1.5em;
+  font-weight: 900;
 }
-h2 { font-size: 125%; }
-h3 { font-size: 100%; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1em; }
 
 
 /* Header
@@ -76,7 +77,8 @@ h3 { font-size: 100%; }
   padding: 1rem;
 }
 .work-recent {
-
+  border-top: .1em solid rgba(0, 0, 0, 0.2);
+  padding: 1em;
 }
 .work-info {
   text-align: center;
@@ -89,20 +91,20 @@ h3 { font-size: 100%; }
 
 /* RWD Media queries
 *********************************************************/
-// @media (min-width: 35em) {
-//   html {
-//     font-size: 200%;
-//   }
-//   body {
-//     font-size: 50%;
-//   }
-// }
+@media (min-width: 35em) {
+  html {
+    font-size: 200%;
+  }
+  body {
+    font-size: 50%;
+  }
+}
 
-// @media (min-width: 70em) {
-//   html {
-//     font-size: 300%;
-//   }
-//   body {
-//     font-size: 40%;
-//   }
-// }
+@media (min-width: 70em) {
+  html {
+    font-size: 300%;
+  }
+  body {
+    font-size: 40%;
+  }
+}
