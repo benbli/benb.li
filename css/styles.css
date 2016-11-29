@@ -31,7 +31,7 @@ h1 {
   // color: #13121A;
   color: #212121;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h2 { font-size: 1.5rem; }
@@ -67,8 +67,11 @@ h3 { font-size: 1.17em; }
 *********************************************************/
 #logo {
   display: block;
-  text-align: center;
   font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -.05em;
+  text-align: center;
+
 }
 
 
@@ -76,7 +79,7 @@ h3 { font-size: 1.17em; }
 *********************************************************/
 #info {
   font-family: 'Lora';
-  padding: 2em 0;
+  padding: 3em 0;
 }
 
 #info h2 {
