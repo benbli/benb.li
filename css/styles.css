@@ -19,7 +19,8 @@ p {
 }
 
 a {
-  color: #b11;
+  // color: #b11;
+  color: #212121;
   text-decoration: none;
 }
 
@@ -28,19 +29,20 @@ a {
 *********************************************************/
 h1 {
   // color: #13121A;
-  color: #111;
-  font-size: 1.5em;
+  color: #212121;
+  font-size: 2rem;
   font-weight: 900;
 }
-h2 { font-size: 1.25em; }
-h3 { font-size: 1em; }
+
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.17em; }
 
 
 /* Header
 *********************************************************/
 #header {
   padding: 1rem;
-  border-bottom: .1em solid rgba(0, 0, 0, 0.2);
+  // border-bottom: .1em solid rgba(0, 0, 0, 0.2);
   line-height: 1;
 }
 
@@ -54,40 +56,68 @@ h3 { font-size: 1em; }
   display: inline-flex;
 }
 
+#header li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
 
 /* Logo
 *********************************************************/
 #logo {
   display: block;
   text-align: center;
-  font-size: 4em;
+  font-size: 2rem;
 }
 
 
 /* Info section
 *********************************************************/
 #info {
-  padding: 1rem;
+  font-family: 'Lora';
+  padding: 2em 0;
+}
+
+#info h2 {
+  line-height: 1.2em;
 }
 
 
 /* Showcase section
 *********************************************************/
 .showcase {
-  padding: 1rem;
+
 }
+
 .work-recent {
+  display: flex;
   border-top: .1em solid rgba(0, 0, 0, 0.2);
-  padding: 1em;
+  padding: 2rem 0;
 }
+
+.work-recent img {
+  height: 8.5rem;
+  width: 10rem;
+}
+
 .work-info {
   text-align: center;
 }
 
+.work-info p {
+  margin: 1rem;
+}
+
+
 
 /* Utility classes
 *********************************************************/
-
+.centered {
+  margin: 0 auto;
+  max-width: 30rem;
+  width: 90%;
+}
 
 /* RWD Media queries
 *********************************************************/
@@ -100,11 +130,11 @@ h3 { font-size: 1em; }
   }
 }
 
-@media (min-width: 70em) {
-  html {
-    font-size: 300%;
-  }
-  body {
-    font-size: 40%;
-  }
-}
+// @media (min-width: 70em) {
+//   html {
+//     font-size: 300%;
+//   }
+//   body {
+//     font-size: 40%;
+//   }
+// }
