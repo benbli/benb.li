@@ -25,24 +25,28 @@ a {
 }
 
 
-/* Font
+/* Headings
 *********************************************************/
 h1 {
   // color: #13121A;
   color: #212121;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 300;
 }
 
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.17em; }
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17em;
+}
 
 
 /* Header
 *********************************************************/
 #header {
   padding: 1rem;
-  // border-bottom: .1em solid rgba(0, 0, 0, 0.2);
   line-height: 1;
 }
 
@@ -71,37 +75,29 @@ h3 { font-size: 1.17em; }
   font-weight: 900;
   letter-spacing: -.05em;
   text-align: center;
-
 }
 
 
 /* Info section
 *********************************************************/
 #info {
-  font-family: 'Lora';
+  // font-family: 'Lora';
+  font-family: 'Quando';
   padding: 3rem 0;
 }
 
 #info h2 {
   line-height: 1.2em;
+  font-weight: 400;
 }
 
 
-/* Showcase section
+/* Work section
 *********************************************************/
-.showcase {
-
-}
-
 .work-recent {
-  display: flex;
   border-top: .1em solid rgba(0, 0, 0, 0.2);
   padding: 2rem 0;
-}
-
-.work-recent img {
-  height: 8.5rem;
-  width: 10rem;
+  width: 100%;
 }
 
 .work-info {
@@ -113,6 +109,14 @@ h3 { font-size: 1.17em; }
 }
 
 
+/* Footer
+*********************************************************/
+#footer nav {
+  min-height: 4rem;
+  padding: 1rem;
+  background-color: purple;
+}
+
 
 /* Utility classes
 *********************************************************/
@@ -121,6 +125,17 @@ h3 { font-size: 1.17em; }
   max-width: 30rem;
   width: 90%;
 }
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1 100%;
+}
+
 
 /* RWD Media queries
 *********************************************************/
@@ -131,13 +146,25 @@ h3 { font-size: 1.17em; }
   body {
     font-size: 50%;
   }
+  .flex-item {
+    flex: 1 50%;
+  }
 }
 
-// @media (min-width: 70em) {
-//   html {
-//     font-size: 300%;
-//   }
-//   body {
-//     font-size: 40%;
-//   }
-// }
+@media (min-width: 50em) {
+  html {
+    font-size: 220%;
+  }
+  body {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 70em) {
+  html {
+    font-size: 240%;
+  }
+  body {
+    font-size: 50%;
+  }
+}
