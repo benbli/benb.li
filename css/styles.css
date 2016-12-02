@@ -114,7 +114,7 @@ h3 {
 #footer nav {
   min-height: 4rem;
   padding: 1rem;
-  background-color: purple;
+  background-color: mistyrose;
 }
 
 
@@ -126,7 +126,7 @@ h3 {
   width: 90%;
 }
 
-.flex {
+.flexed {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
