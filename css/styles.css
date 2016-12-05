@@ -3,11 +3,12 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font: 100% / 1.6 'Source Sans Pro';
+  font: 100% / 1.6 'Source Sans Pro', sans-serif;
+  // font: 100% / 1.6 'MaisonNeueLight', sans-serif;
 }
 
 body {
-  background: #fff;
+  background: #f5f5f5;
   // color: #111;
   color: #212121;
   text-rendering: optimizeLegibility;
@@ -24,7 +25,15 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'TiemposTextRegular';
+  src: url('../public/fonts/TiemposTextRegular.woff2') format('woff2');
+}
 
+@font-face {
+  font-family: 'MaisonNeueLight';
+  src: url('../public/fonts/maisonneue-light.woff2') format('woff2');
+}
 /* Headings
 *********************************************************/
 h1 {
@@ -81,9 +90,10 @@ h3 {
 /* Info section
 *********************************************************/
 #info {
-  font-family: 'Lora';
+  // font-family: 'Lora';
   // font-family: 'Quando';
   // font-family: 'Sumana';
+  font-family: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
   padding: 3rem 0;
 }
 
