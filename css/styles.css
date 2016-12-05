@@ -8,8 +8,8 @@ html {
 
 body {
   background: #fff;
-  // color: #3a3a3a;
-  color: #333;
+  // color: #111;
+  color: #212121;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 1.13em;
 }
 
 
@@ -81,9 +81,14 @@ h3 {
 /* Info section
 *********************************************************/
 #info {
-  // font-family: 'Lora';
-  font-family: 'Quando';
+  font-family: 'Lora';
+  // font-family: 'Quando';
+  // font-family: 'Sumana';
   padding: 3rem 0;
+}
+
+#info h1 {
+  // font-weight: 700;
 }
 
 #info h2 {
@@ -112,9 +117,13 @@ h3 {
 /* Footer
 *********************************************************/
 #footer nav {
+  background-color: #111;
   min-height: 4rem;
   padding: 1rem;
-  background-color: mistyrose;
+}
+
+#footer a {
+  color: #ddd;
 }
 
 
