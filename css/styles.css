@@ -1,3 +1,14 @@
+/* CSS Variables
+*********************************************************/
+:root {
+  --link-color: #000;
+  // --link-color: #c5cdd4;
+  --bg-color: #fff;
+  // --font-color: #111;
+  --font-color: #212121;
+}
+
+
 /* Common
 *********************************************************/
 // * {
@@ -17,14 +28,13 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font: 100% / 1.6 'Source Sans Pro', sans-serif;
+  // font: 100% / 1.6 'Lora', sans-serif;
   // font: 100% / 1.6 'MaisonNeueLight', sans-serif;
 }
 
 body {
-  // background: #f5f5f5;
-  background: #fff;
-  // color: #111;
-  color: #212121;
+  background: var(--bg-color);
+  color: var(--font-color);
   text-rendering: optimizeLegibility;
   // -webkit-font-smoothing: antialiased;
 }
@@ -34,10 +44,21 @@ p {
 }
 
 a {
-  // color: #b11;
-  color: #212121;
+  color: var(--link-color);
   text-decoration: none;
+  position: relative;
 }
+
+// a:after {
+//   content: '';
+//   width: 100%;
+//   position: absolute;
+//   left: 0;
+//   bottom: -1px;
+//   border-width: 0 0 1px;
+//   border-style: solid;
+// }
+
 
 @font-face {
   font-family: 'TiemposTextRegular';
@@ -65,6 +86,10 @@ h2 {
 
 h3 {
   font-size: 1.13em;
+}
+
+h4 {
+  font-size:;
 }
 
 
@@ -110,6 +135,7 @@ header li a {
   // font-family: 'Quando';
   // font-family: 'Sumana';
   font-family: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
+  // font-family: 'Source Sans Pro', 'Book Antiqua', Georgia, serif;
   padding: 3rem 0;
 }
 
@@ -143,13 +169,14 @@ header li a {
 /* Footer
 *********************************************************/
 footer nav {
-  background-color: #111;
+  background-color: #141515;
   min-height: 4rem;
   padding: 1rem;
 }
 
 footer a {
-  color: #ddd;
+  // color: #ddd;
+  color: #c5cdd4;
 }
 
 
