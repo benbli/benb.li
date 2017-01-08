@@ -1,11 +1,15 @@
 /* CSS Variables
 *********************************************************/
 :root {
-  --link-color: #000;
+  --link-color: #242424;
+  --underline-color: #dbdbdb;
   // --link-color: #c5cdd4;
   --bg-color: #fff;
   // --font-color: #111;
-  --font-color: #212121;
+  // --font-color: #212121;
+  --font-color: #242424;
+  --font-serif: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
+  --font-sans-serif: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -59,6 +63,13 @@ a {
 //   border-style: solid;
 // }
 
+.serif {
+  font-family: var(--font-serif);
+}
+
+.sans-serif {
+  font-family: var(--font-sans-serif);
+}
 
 @font-face {
   font-family: 'TiemposTextRegular';
@@ -74,8 +85,6 @@ a {
 /* Headings
 *********************************************************/
 h1 {
-  // color: #13121A;
-  color: #212121;
   font-size: 2rem;
   font-weight: 300;
 }
@@ -88,10 +97,6 @@ h3 {
   font-size: 1.13em;
 }
 
-h4 {
-  font-size:;
-}
-
 
 /* Header
 *********************************************************/
@@ -100,21 +105,21 @@ header {
   line-height: 1;
 }
 
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+// nav {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
 
-header li {
-  display: inline-flex;
-}
+// nav li {
+//   display: inline-flex;
+// }
 
-header li a {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .01em;
-}
+// nav li a {
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   letter-spacing: .01em;
+// }
 
 
 /* Logo
@@ -134,20 +139,24 @@ header li a {
   // font-family: 'Lora';
   // font-family: 'Quando';
   // font-family: 'Sumana';
-  font-family: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
+  // font-family: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
   // font-family: 'Source Sans Pro', 'Book Antiqua', Georgia, serif;
-  padding: 3rem 0;
+  padding: 3.2rem 0;
 }
 
 #info h1 {
-  // font-weight: 700;
+  line-height: 1.3em;
 }
 
-#info h2 {
-  line-height: 1.2em;
-  font-weight: 400;
+#info nav li {
+  display: inline-flex;
 }
 
+#info nav li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
 
 /* Work section
 *********************************************************/
@@ -162,7 +171,7 @@ header li a {
 }
 
 .work-info p {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 
@@ -223,6 +232,9 @@ footer a {
   main {
     padding: 0 1rem;
   }
+  #logo {
+    text-align: left;
+  }
 }
 
 @media (min-width: 70em) {
@@ -234,5 +246,8 @@ footer a {
   }
   main {
     padding: 0 1rem;
+  }
+  #logo {
+    text-align: left;
   }
 }
