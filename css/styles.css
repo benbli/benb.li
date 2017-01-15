@@ -85,7 +85,7 @@ a {
 /* Headings
 *********************************************************/
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
@@ -145,7 +145,7 @@ header {
 }
 
 #info h1 {
-  line-height: 1.3em;
+  line-height: 1.1em;
 }
 
 #info nav li {
@@ -245,7 +245,7 @@ footer a {
     font-size: 50%;
   }
   main {
-    padding: 0 1rem;
+    padding: 0 3rem;
   }
   #logo {
     text-align: left;
