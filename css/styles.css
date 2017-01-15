@@ -3,6 +3,7 @@
 :root {
   --link-reset: #242424;
   --link-color: #00f298;
+  /*--link-color: #00AA6B; // compliant*/
   --underline-color: #dbdbdb;
   // --link-color: #c5cdd4;
   --bg-color: #fff;
