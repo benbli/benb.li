@@ -112,31 +112,21 @@ header {
   line-height: 1;
 }
 
-// nav {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
 
-// nav li {
-//   display: inline-flex;
-// }
-
-// nav li a {
-//   font-weight: 700;
-//   text-transform: uppercase;
-//   letter-spacing: .01em;
-// }
+/* Main
+*********************************************************/
+main {
+  padding: 0 1rem;
+}
 
 
 /* Logo
 *********************************************************/
 #logo {
-  /*display: block;*/
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: -.05em;
-  /*text-align: center;*/
+  // text-align: center;
 }
 
 
@@ -233,28 +223,10 @@ footer a {
   html {
     font-size: 220%;
   }
-  body {
-    font-size: 50%;
-  }
-  main {
-    padding: 0 1rem;
-  }
-  #logo {
-    text-align: left;
-  }
 }
 
 @media (min-width: 70em) {
   html {
     font-size: 240%;
-  }
-  body {
-    font-size: 50%;
-  }
-  main {
-    padding: 0 3rem;
-  }
-  #logo {
-    text-align: left;
   }
 }
