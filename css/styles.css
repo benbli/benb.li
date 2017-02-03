@@ -188,13 +188,16 @@ header {
 /*------------------------------------*\
   #WORK-SECTION
 \*------------------------------------*/
+.showcase {
+  padding-top: 5rem;
+}
+
 .work-recent {
   // border-top: .1em dotted rgba(0, 0, 0, 0.2);
   padding: 2rem 0;
 }
 
 .work-info {
-  padding: 1rem;
   text-align: center;
 }
 
