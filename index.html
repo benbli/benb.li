@@ -52,7 +52,7 @@
 
 <div id="pagewrap">
 
-<header role="banner">
+<header role="banner" class="header">
   <a title="Ben Li" href="/"><span id="logo">BL.</span></a>
 </header>
 
@@ -60,7 +60,8 @@
 <main role="main">
 <section class="info">
 
-  <h2>Hi, I'm Ben —</h2>
+  <!-- <h2>Hi, I'm Ben —</h2> -->
+  <h2>Hi, I'm Ben &mdash;</h2>
   <h1>
     <strong class="sans-serif">Frontend Developer</strong>
     at <a class="color-link" href="http://www.cittacorp.com/">Citta</a>.
@@ -84,10 +85,7 @@
 <section class="showcase">
   <ul>
     <li class="work-recent flexed">
-      <div class="work-img flex-item">
-        <img src="/public/images/mindstaq.png">
-      </div>
-      <div class="work-info flex-item">
+      <div class="work-info flex-narrow">
         <h2><a href="http://www.mindstaq.com/">MindStaq</a></h2>
         <h3>Angular / Productivity / Web Application</h3>
         <p>
@@ -95,29 +93,32 @@
         <a class="color-link" href="http://www.mindstaq.com/">MindStaq</a> rethinks work flows for individuals and teams to better maximize your mental space.
         </p>
       </div>
+      <div class="work-img flex-wide">
+        <img src="/public/images/mindstaq.png">
+      </div>
     </li>
     <li class="work-recent flexed">
-      <div class="work-img flex-item">
-         <img src="http://static01.mediaite.com/med/wp-content/uploads/2015/08/goonies-house-truffle-shuffle.jpg">
-      </div>
-      <div class="work-info flex-item">
+      <div class="work-info flex-narrow">
         <h2>rAlly</h2>
         <h3>Founder / Community / Mobile</h3>
         <p>
         rAlly instills in you a sense of safety in your travels by finding you a companion. Never go alone.
         </p>
       </div>
+      <div class="work-img flex-wide">
+         <img src="http://static01.mediaite.com/med/wp-content/uploads/2015/08/goonies-house-truffle-shuffle.jpg">
+      </div>
     </li>
     <li class="work-recent flexed">
-      <div class="work-img flex-item">
-        <img src="/public/images/barkr.png">
-      </div>
-      <div class="work-info flex-item">
+      <div class="work-info flex-narrow">
         <h2><a href="https://barkrapp.herokuapp.com/">Barkr</a></h2>
         <h3>UX / UI / Angular / Google Maps API</h3>
         <p>
         Not enough puppies in your life? How about an app that helps you find or set up playdates at your nearest park? I created <a class="color-link" href="https://barkrapp.herokuapp.com/">Barkr</a> for dog aficionados to congregate and share their love for man's best friend.
         </p>
+      </div>
+      <div class="work-img flex-wide">
+        <img src="/public/images/barkr.png">
       </div>
     </li>
   </ul>
@@ -128,7 +129,6 @@
 
 <footer>
   <nav>
-    <span>Copyright &#169; 2017</span>
     <a href="">Github</a>
     <a href="">Contact</a>
     <a href="">Resume</a>

@@ -6,7 +6,8 @@
   #CSS-VARIABLES
 \*------------------------------------*/
 :root {
-  --highlight-color: #b3d4fc;
+  // --highlight-color: #b3d4fc;
+  --highlight-color: #2c2c2c;
   --link-reset: #242424;
   --link-color: #00f298;
   // --link-color: #00AA6B; // compliant
@@ -51,6 +52,7 @@ html {
 
 body {
   background: var(--bg-color);
+  // background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
   color: var(--font-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -147,7 +149,7 @@ h3 {
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
-header {
+.header {
   padding: 1.4rem;
   line-height: 1;
 }
@@ -198,11 +200,15 @@ header {
 }
 
 .work-info {
-  text-align: center;
+  // text-align: center;
 }
 
 .work-info p {
   margin: 0.5rem 0;
+}
+
+.work-img {
+  // padding-left: 2rem;
 }
 
 
@@ -213,7 +219,8 @@ header {
   #FOOTER
 \*------------------------------------*/
 footer {
-  background-color: #f2f5f8;
+  // background-color: #f2f5f8;
+  background-color: #272B2C;
 }
 
 footer nav {
@@ -224,7 +231,8 @@ footer nav {
 
 footer a {
   // color: #ddd;
-  color: #c5cdd4;
+  // color: #c5cdd4;
+  color: #beb497;
 }
 
 
@@ -242,16 +250,21 @@ footer a {
 
 .flexed {
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  flex-flow: column wrap;
+  // align-items: center;
 }
 
-.flex-item {
-  flex: 1 0 100%;
+.flex-wide {
+  flex: 1 0 65%;
 }
 
+.flex-narrow {
+  flex: 1 0 40%;
+}
 
-
+.flex-space {
+  justify-content: flex-end;
+}
 
 
 /*------------------------------------*\
@@ -264,9 +277,6 @@ footer a {
   body {
     font-size: 50%;
   }
-  .flex-item {
-    flex: 1 50%;
-  }
 }
 
 @media (min-width: 50em) {
@@ -278,5 +288,11 @@ footer a {
 @media (min-width: 70em) {
   html {
     font-size: 240%;
+  }
+  .flexed {
+    flex-flow: row nowrap;
+  }
+  .work-info {
+    margin-right: 1.2rem;
   }
 }
