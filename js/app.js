@@ -17,7 +17,7 @@
         
             soot.style.top = randomWidth + 'px';
             soot.style.left = randomHeight + 'px';
-            soot.style.animation = 'animation-blur 1s ease 1';
+            soot.style.animation = 'animation-blur 1s ease-in-out 1';
 
            
            

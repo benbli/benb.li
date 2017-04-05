@@ -279,7 +279,7 @@ footer a {
   left: 800px;
   height: 100px;
   width: 100px;
-  transition: all 1.5s cubic-bezier(0, 0.65, 0.03, 1.2);
+  transition: all 3s cubic-bezier(0, 0.65, 0.03, 1.2);
   animation: animation-blur 1s ease-in-out 1; 
 }
 
