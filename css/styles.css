@@ -177,20 +177,24 @@ h3 {
 }
 
 .work-info {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .work-info.one a {
   color: #f39468;
+  color: #FF0083;
 }
 
 .work-info.two a {
-  color: green;
+  color: #f39468;
 }
 
 .work-info.three a {
-  color: #f39468;
   color: #fff;
+  color: #6060EF;
+  color: #B9B6E5;
+  color: #38a4f7;
+  color: #f39468;
 }
 
 .work-background-one {
@@ -198,19 +202,22 @@ h3 {
 }
 
 .work-background-two {
-  // background-color: #FF6666;
-  // background-color: #62EA80;
   background-color: #F44336;
+  background-color: #ff813d;
+  background-color: #6060EF;
 }
 
 .work-background-three {
-  background-color: #F44336;
-  color: #ff4d3b;
+  background-color: #f44336;
+  background-color: #38a4f7;
+  background-color: #B9B6E5;
+  background-color: #6060EF;
+  background-color: #ff813d;
 }
 
 .work-img {
   // padding-top: 2rem;
-  max-width: 24rem;
+  /*max-width: 24rem;*/
   width: 20rem;
   // max-height: 5rem;
 }
@@ -235,6 +242,10 @@ footer nav {
 footer a {
   // color: #ddd;
   // color: #c5cdd4;
+  color: #beb497;
+}
+
+footer span {
   color: #beb497;
 }
 
@@ -275,12 +286,12 @@ footer a {
 .soot-main {
   position: absolute;
   background: url(../public/images/sm_soot.png) no-repeat center;
-  top: 300px;
-  left: 800px;
+  top: 18vh;
+  left: 50vw;
   height: 100px;
   width: 100px;
   transition: all 3s cubic-bezier(0, 0.65, 0.03, 1.2);
-  animation: animation-blur 1s ease-in-out 1; 
+  animation: animation-blur 1s ease-in-out 1;
 }
 
 /*.blur {
