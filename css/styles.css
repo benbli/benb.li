@@ -216,10 +216,7 @@ h3 {
 }
 
 .work-img {
-  // padding-top: 2rem;
-  /*max-width: 24rem;*/
-  width: 20rem;
-  // max-height: 5rem;
+  width: 15rem;
 }
 
 
@@ -268,6 +265,7 @@ footer span {
 }
 
 .flex-wide {
+  align-self: center;
   flex: 1 0 70%;
 }
 
@@ -277,7 +275,7 @@ footer span {
 }
 
 .vh-100 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /*------------------------------------*\
