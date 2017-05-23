@@ -256,7 +256,7 @@ footer span {
 \*------------------------------------*/
 .centered {
   margin: 0 auto;
-  max-width: 28rem;
+  max-width: 25rem;
   width: 85%;
   // height: 100%;
 }
@@ -264,12 +264,13 @@ footer span {
 .flexed {
   display: flex;
   flex-flow: column wrap;
-  // align-items: center;
+  /*align-items: center;*/
 }
 
 .flex-wide {
   align-self: center;
   flex: 1 0 70%;
+
 }
 
 .flex-narrow {
@@ -281,6 +282,9 @@ footer span {
   min-height: 100vh;
 }
 
+.text-align {
+   text-align: center;
+}
 /*------------------------------------*\
   #SOOT
 \*------------------------------------*/
@@ -328,7 +332,6 @@ footer span {
   body {
     font-size: 50%;
   }
-
 }
 
 @media (min-width: 50em) {
@@ -348,7 +351,7 @@ footer span {
     flex-flow: row nowrap;
   }
   .work-info {
-    margin-right: 2.2rem;
+    margin-right: 2rem;
     max-width: 8.8rem;
   }
 }
