@@ -1,0 +1,357 @@
+/**
+ * Author: Ben Li
+ */
+
+/*------------------------------------*\
+  #CSS-VARIABLES
+\*------------------------------------*/
+:root {
+  // --highlight-color: #b3d4fc;
+  --highlight-color: #2c2c2c;
+  // --link-reset: #242424;
+  --link-reset: inherit;
+  --link-color: #00f298;
+  // --link-color: #00AA6B; // compliant
+  --underline-color: #dbdbdb;
+  // --link-color: #c5cdd4;
+  --bg-color: #fff;
+  // --font-color: #111;
+  // --font-color: #212121;
+  // --font-color: #242424;
+  --font-color: #1a1a1a;
+  --font-serif: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
+  --font-sans-serif: 'Source Sans Pro', sans-serif;
+}
+
+/*transition the bg*/
+/*background 1.5s cubic-bezier(0.23,1,0.32,1)*/
+
+/*------------------------------------*\
+  #SHARED-STYLES
+\*------------------------------------*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font: 120% / 1.4 'Source Sans Pro', sans-serif;
+  // font: 100% / 1.6 'Lora', sans-serif;
+  // font: 100% / 1.6 'MaisonNeueLight', sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  // background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  color: var(--font-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  color: var(--link-reset);
+  text-decoration: none;
+  // position: relative;
+}
+
+a.color-link {
+  color: var(--link-color);
+  font-weight: 600;
+}
+
+/*.underline a:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  border-width: 0 0 1px;
+  border-style: dotted;
+  color: #da393f;
+}*/
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.sans-serif {
+  font-family: var(--font-sans-serif);
+}
+
+::selection {
+  background-color: var(--highlight-color);
+  color: var(--bg-color);
+  text-shadow: none;
+}
+
+@font-face {
+  font-family: 'TiemposTextRegular';
+  src: url('../public/fonts/TiemposTextRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MaisonNeueLight';
+  src: url('../public/fonts/maisonneue-light.woff2') format('woff2');
+}
+
+
+
+/*------------------------------------*\
+  #HEADINGS-TITLES
+\*------------------------------------*/
+h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 0.8em;
+}
+
+
+
+/*------------------------------------*\
+  #LOGO
+\*------------------------------------*/
+/*#logo {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -.05em;
+}*/
+
+#logo {
+  width: 2rem;
+}
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+.header {
+  padding: 1.4rem;
+  line-height: 1;
+}
+
+
+
+/*------------------------------------*\
+  #INFO-SECTION
+\*------------------------------------*/
+.info {
+  // font-family: 'Lora';
+  // font-family: 'Quando';
+  // font-family: 'Sumana';
+  // font-family: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
+  // font-family: 'Source Sans Pro', 'Book Antiqua', Georgia, serif;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  line-height: 1;
+}
+
+.info-nav {
+  padding-top: .4rem;
+}
+
+.info nav li {
+  display: inline-flex;
+  padding-right: .4rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  // text-transform: uppercase;
+}
+
+
+
+/*------------------------------------*\
+  #WORK-SECTION
+\*------------------------------------*/
+.showcase {
+  // padding-top: 3rem;
+}
+
+.work-recent {
+  // border-top: .1em dotted rgba(0, 0, 0, 0.2);
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.work-info {
+  padding-bottom: 2rem;
+}
+
+.work-info.one a {
+  color: #f39468;
+  color: #FF0083;
+}
+
+.work-info.two a {
+  color: #f39468;
+}
+
+.work-info.three a {
+  color: #fff;
+  color: #6060EF;
+  color: #B9B6E5;
+  color: #38a4f7;
+  color: #f39468;
+}
+
+.work-background-one {
+  background-color: #1E1B2C;
+}
+
+.work-background-two {
+  background-color: #F44336;
+  background-color: #ff813d;
+  background-color: #6060EF;
+}
+
+.work-background-three {
+  background-color: #f44336;
+  background-color: #38a4f7;
+  background-color: #B9B6E5;
+  background-color: #6060EF;
+  background-color: #ff813d;
+}
+
+.work-img {
+  width: 15rem;
+}
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+footer {
+  // background-color: #f2f5f8;
+  // background-color: #272B2C;
+  background-color: #27272B;
+}
+
+footer nav {
+  // background-color: #141515;
+  min-height: 4rem;
+  padding: 1rem;
+}
+
+footer a {
+  // color: #ddd;
+  // color: #c5cdd4;
+  color: #beb497;
+}
+
+footer span {
+  color: #beb497;
+}
+
+
+
+/*------------------------------------*\
+  #UTILITY-CLASSES
+\*------------------------------------*/
+.centered {
+  margin: 0 auto;
+  max-width: 25rem;
+  width: 85%;
+  // height: 100%;
+}
+
+.flexed {
+  display: flex;
+  flex-flow: column wrap;
+  /*align-items: center;*/
+}
+
+.flex-wide {
+  align-self: center;
+  flex: 1 0 70%;
+
+}
+
+.flex-narrow {
+  align-self: center;
+  flex: 1 0 30%;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.text-align {
+   text-align: center;
+}
+/*------------------------------------*\
+  #SOOT
+\*------------------------------------*/
+.soot-main {
+  position: absolute;
+  background: url(../public/images/sm_soot.png) no-repeat center;
+  top: 18vh;
+  left: 50vw;
+  height: 100px;
+  width: 100px;
+  transition: all 3s cubic-bezier(0, 0.65, 0.03, 1.2);
+  animation: animation-blur 1s ease-in-out 1;
+}
+
+/*.blur {
+  -webkit-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}*/
+
+@keyframes animation-blur {
+  0% {
+    -webkit-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+  }
+  50% {
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+  }
+  100% {
+    -webkit-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+  }
+}
+/*------------------------------------*\
+  #MEDIA-QUERIES
+\*------------------------------------*/
+@media (min-width: 35em) {
+  html {
+    font-size: 200%;
+  }
+  body {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 50em) {
+  html {
+    font-size: 220%;
+  }
+  .work-info {
+    // max-width: 8.8rem;
+  }
+}
+
+@media (min-width: 70em) {
+  html {
+    font-size: 240%;
+  }
+  .flexed {
+    flex-flow: row nowrap;
+  }
+  .work-info {
+    margin-right: 2rem;
+    max-width: 8.8rem;
+  }
+}
