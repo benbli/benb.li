@@ -6,18 +6,11 @@
   #CSS-VARIABLES
 \*------------------------------------*/
 :root {
-  // --highlight-color: #b3d4fc;
   --highlight-color: #2c2c2c;
-  // --link-reset: #242424;
   --link-reset: inherit;
   --link-color: #00f298;
-  // --link-color: #00AA6B; // compliant
   --underline-color: #dbdbdb;
-  // --link-color: #c5cdd4;
   --bg-color: #fff;
-  // --font-color: #111;
-  // --font-color: #212121;
-  // --font-color: #242424;
   --font-color: #1a1a1a;
   --font-serif: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
   --font-sans-serif: 'Source Sans Pro', sans-serif;
@@ -32,14 +25,12 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   font: 120% / 1.4 'Source Sans Pro', sans-serif;
-  // font: 100% / 1.6 'Lora', sans-serif;
-  // font: 100% / 1.6 'MaisonNeueLight', sans-serif;
 }
 
 body {
   background: var(--bg-color);
-  // background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
   color: var(--font-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -52,24 +43,12 @@ p {
 a {
   color: var(--link-reset);
   text-decoration: none;
-  // position: relative;
 }
 
 a.color-link {
   color: var(--link-color);
   font-weight: 600;
 }
-
-/*.underline a:after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  border-width: 0 0 1px;
-  border-style: dotted;
-  color: #da393f;
-}*/
 
 .serif {
   font-family: var(--font-serif);
@@ -142,11 +121,6 @@ h3 {
   #INFO-SECTION
 \*------------------------------------*/
 .info {
-  // font-family: 'Lora';
-  // font-family: 'Quando';
-  // font-family: 'Sumana';
-  // font-family: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
-  // font-family: 'Source Sans Pro', 'Book Antiqua', Georgia, serif;
   padding-top: 3.2rem;
   padding-bottom: 3.2rem;
   line-height: 1;
@@ -161,7 +135,6 @@ h3 {
   padding-right: .4rem;
   font-weight: 700;
   letter-spacing: .01em;
-  // text-transform: uppercase;
 }
 
 
@@ -169,12 +142,7 @@ h3 {
 /*------------------------------------*\
   #WORK-SECTION
 \*------------------------------------*/
-.showcase {
-  // padding-top: 3rem;
-}
-
 .work-recent {
-  // border-top: .1em dotted rgba(0, 0, 0, 0.2);
   padding: 2rem 0;
   color: #fff;
 }
@@ -183,20 +151,19 @@ h3 {
   padding-bottom: 2rem;
 }
 
+.work-info.three {
+  color: #393A3E;
+}
+
 .work-info.one a {
-  color: #f39468;
   color: #FF0083;
 }
 
 .work-info.two a {
-  color: #f39468;
+  color: #FFAF38;
 }
 
 .work-info.three a {
-  color: #fff;
-  color: #6060EF;
-  color: #B9B6E5;
-  color: #38a4f7;
   color: #f39468;
 }
 
@@ -205,43 +172,36 @@ h3 {
 }
 
 .work-background-two {
-  background-color: #F44336;
-  background-color: #ff813d;
-  background-color: #6060EF;
+  background-color: #0092CA;
 }
 
 .work-background-three {
-  background-color: #f44336;
-  background-color: #38a4f7;
-  background-color: #B9B6E5;
-  background-color: #6060EF;
-  background-color: #ff813d;
+  /*background-color: #444398;*/
+  background-color: #FFF4D7;
 }
 
-.work-img {
-  width: 15rem;
+.work-img-barkr {
+  width: 8rem;
 }
 
-
+.work-info-img {
+  width:15rem;
+  text-align: center;
+}
 
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
 footer {
-  // background-color: #f2f5f8;
-  // background-color: #272B2C;
   background-color: #27272B;
 }
 
 footer nav {
-  // background-color: #141515;
   min-height: 4rem;
   padding: 1rem;
 }
 
 footer a {
-  // color: #ddd;
-  // color: #c5cdd4;
   color: #beb497;
 }
 
@@ -258,33 +218,19 @@ footer span {
   margin: 0 auto;
   max-width: 25rem;
   width: 85%;
-  // height: 100%;
 }
 
-.flexed {
+.flex-row {
   display: flex;
-  flex-flow: column wrap;
-  /*align-items: center;*/
-}
-
-.flex-wide {
-  align-self: center;
-  flex: 1 0 70%;
-
-}
-
-.flex-narrow {
-  align-self: center;
-  flex: 1 0 30%;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .vh-100 {
   min-height: 100vh;
 }
 
-.text-align {
-   text-align: center;
-}
 /*------------------------------------*\
   #SOOT
 \*------------------------------------*/
@@ -298,12 +244,6 @@ footer span {
   transition: all 3s cubic-bezier(0, 0.65, 0.03, 1.2);
   animation: animation-blur 1s ease-in-out 1;
 }
-
-/*.blur {
-  -webkit-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(1px);
-}*/
 
 @keyframes animation-blur {
   0% {
@@ -338,20 +278,13 @@ footer span {
   html {
     font-size: 220%;
   }
-  .work-info {
-    // max-width: 8.8rem;
-  }
 }
 
 @media (min-width: 70em) {
   html {
     font-size: 240%;
   }
-  .flexed {
-    flex-flow: row nowrap;
-  }
   .work-info {
-    margin-right: 2rem;
     max-width: 8.8rem;
   }
 }
