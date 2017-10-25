@@ -12,8 +12,8 @@
   --underline-color: #dbdbdb;
   --bg-color: #fff;
   --font-color: #1a1a1a;
-  --font-serif: 'TiemposTextRegular', 'Book Antiqua', Georgia, serif;
-  --font-sans-serif: 'Source Sans Pro', sans-serif;
+  --font-serif: "TiemposTextRegular", "Book Antiqua", Georgia, serif;
+  --font-sans-serif: "Source Sans Pro", sans-serif;
 }
 
 /*transition the bg*/
@@ -26,7 +26,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  font: 120% / 1.4 'Source Sans Pro', sans-serif;
+  font: 120% / 1.4 "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -65,16 +65,14 @@ a.color-link {
 }
 
 @font-face {
-  font-family: 'TiemposTextRegular';
-  src: url('../public/fonts/TiemposTextRegular.woff2') format('woff2');
+  font-family: "TiemposTextRegular";
+  src: url("../public/fonts/TiemposTextRegular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'MaisonNeueLight';
-  src: url('../public/fonts/maisonneue-light.woff2') format('woff2');
+  font-family: "MaisonNeueLight";
+  src: url("../public/fonts/maisonneue-light.woff2") format("woff2");
 }
-
-
 
 /*------------------------------------*\
   #HEADINGS-TITLES
@@ -91,8 +89,6 @@ h2 {
 h3 {
   font-size: 0.8em;
 }
-
-
 
 /*------------------------------------*\
   #LOGO
@@ -115,8 +111,6 @@ h3 {
   line-height: 1;
 }
 
-
-
 /*------------------------------------*\
   #INFO-SECTION
 \*------------------------------------*/
@@ -127,15 +121,15 @@ h3 {
 }
 
 .info-nav {
-  padding-top: .4rem;
+  padding-top: 0.4rem;
 }
 
 .info nav li {
   position: relative;
   display: inline-flex;
-  margin-right: .4rem;
+  margin-right: 0.4rem;
   font-weight: 700;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
 }
 
 .info nav li a:before {
@@ -172,15 +166,15 @@ h3 {
 }
 
 .work-info.three {
-  color: #393A3E;
+  color: #393a3e;
 }
 
 .work-info.one a {
-  color: #FF0083;
+  color: #ff0083;
 }
 
 .work-info.two a {
-  color: #FFAF38;
+  color: #ffaf38;
 }
 
 .work-info.three a {
@@ -188,16 +182,16 @@ h3 {
 }
 
 .work-background-one {
-  background-color: #1E1B2C;
+  background-color: #1e1b2c;
 }
 
 .work-background-two {
-  background-color: #0092CA;
+  background-color: #0092ca;
 }
 
 .work-background-three {
   /*background-color: #444398;*/
-  background-color: #FFF4D7;
+  background-color: #fff4d7;
 }
 
 .work-img-barkr {
@@ -205,7 +199,7 @@ h3 {
 }
 
 .work-info-img {
-  width:15rem;
+  width: 15rem;
   text-align: center;
 }
 
@@ -213,7 +207,7 @@ h3 {
   #FOOTER
 \*------------------------------------*/
 footer {
-  background-color: #27272B;
+  background-color: #27272b;
 }
 
 footer nav {
@@ -228,8 +222,6 @@ footer a {
 footer span {
   color: #beb497;
 }
-
-
 
 /*------------------------------------*\
   #UTILITY-CLASSES
