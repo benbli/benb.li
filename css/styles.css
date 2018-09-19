@@ -1,0 +1,302 @@
+/**
+ * Author: Ben Li
+ */
+
+/*------------------------------------*\
+  #CSS-VARIABLES
+\*------------------------------------*/
+:root {
+  --highlight-color: #2c2c2c;
+  --link-reset: inherit;
+  --link-color: #00f298;
+  --underline-color: #dbdbdb;
+  --bg-color: #fff;
+  --font-color: #1a1a1a;
+  --font-serif: "TiemposTextRegular", "Book Antiqua", Georgia, serif;
+  --font-sans-serif: "Source Sans Pro", sans-serif;
+}
+
+/*transition the bg*/
+/*background 1.5s cubic-bezier(0.23,1,0.32,1)*/
+
+/*------------------------------------*\
+  #SHARED-STYLES
+\*------------------------------------*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  font: 120% / 1.4 "Source Sans Pro", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--font-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  color: var(--link-reset);
+  text-decoration: none;
+}
+
+a.color-link {
+  color: var(--link-color);
+  font-weight: 600;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.sans-serif {
+  font-family: var(--font-sans-serif);
+}
+
+::selection {
+  background-color: var(--highlight-color);
+  color: var(--bg-color);
+  text-shadow: none;
+}
+
+@font-face {
+  font-family: "TiemposTextRegular";
+  src: url("../public/fonts/TiemposTextRegular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MaisonNeueLight";
+  src: url("../public/fonts/maisonneue-light.woff2") format("woff2");
+}
+
+/*------------------------------------*\
+  #HEADINGS-TITLES
+\*------------------------------------*/
+h1 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 0.8em;
+}
+
+/*------------------------------------*\
+  #LOGO
+\*------------------------------------*/
+/*#logo {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -.05em;
+}*/
+
+#logo {
+  width: 2rem;
+}
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+.header {
+  padding: 1.4rem;
+  line-height: 1;
+}
+
+/*------------------------------------*\
+  #INFO-SECTION
+\*------------------------------------*/
+.info {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  line-height: 1;
+}
+
+.info-nav {
+  padding-top: 0.4rem;
+}
+
+.info nav li {
+  position: relative;
+  display: inline-flex;
+  margin-right: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.info nav li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--font-color);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.info nav li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*------------------------------------*\
+  #WORK-SECTION
+\*------------------------------------*/
+.work-recent {
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.work-info {
+  padding-bottom: 2rem;
+}
+
+.work-info.three {
+  color: #393a3e;
+}
+
+.work-info.one a {
+  color: #ff0083;
+}
+
+.work-info.two a {
+  color: #ffaf38;
+}
+
+.work-info.three a {
+  color: #f39468;
+}
+
+.work-background-one {
+  background-color: #1e1b2c;
+}
+
+.work-background-two {
+  background-color: #0092ca;
+}
+
+.work-background-three {
+  /*background-color: #444398;*/
+  background-color: #fff4d7;
+}
+
+.work-img-barkr {
+  width: 8rem;
+}
+
+.work-info-img {
+  width: 15rem;
+  text-align: center;
+}
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+footer {
+  background-color: #27272b;
+}
+
+footer nav {
+  min-height: 4rem;
+  padding: 1rem;
+}
+
+footer a {
+  color: #beb497;
+}
+
+footer span {
+  color: #beb497;
+}
+
+/*------------------------------------*\
+  #UTILITY-CLASSES
+\*------------------------------------*/
+.centered {
+  margin: 0 auto;
+  max-width: 30rem;
+  width: 85%;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+/*------------------------------------*\
+  #SOOT
+\*------------------------------------*/
+.soot-main {
+  position: absolute;
+  background: url(../public/images/sm_soot.png) no-repeat center;
+  top: 18vh;
+  left: 50vw;
+  height: 100px;
+  width: 100px;
+  transition: all 3s cubic-bezier(0, 0.65, 0.03, 1.2);
+  animation: animation-blur 1s ease-in-out 1;
+}
+
+@keyframes animation-blur {
+  0% {
+    -webkit-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+  }
+  50% {
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+  }
+  100% {
+    -webkit-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+  }
+}
+/*------------------------------------*\
+  #MEDIA-QUERIES
+\*------------------------------------*/
+@media (min-width: 35em) {
+  html {
+    font-size: 200%;
+  }
+  body {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 50em) {
+  html {
+    font-size: 220%;
+  }
+}
+
+@media (min-width: 70em) {
+  html {
+    font-size: 240%;
+  }
+  .work-info {
+    max-width: 8.8rem;
+  }
+}
